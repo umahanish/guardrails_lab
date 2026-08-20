@@ -10,6 +10,8 @@ implementations below and a token-cost walkthrough) lives in
 `guardrails_lab.ipynb`; `main.py` is a lighter, script-only way to see the
 core pipeline run.
 
+![Guardrails architecture diagram: Input Guardrails (Mask Sensitive Data, Detect Prompt Injection, Scope Validation, Content Safety) feed the Agent/LLM loop, which feeds Output Guardrails (Groundedness/Hallucination check, Mask Sensitive Data, Content Safety) back to the Agent; the Agent also reaches Tools (Read/Write/Update/Delete) through Tool Guardrails (Schema/Parameter validation, Permission enforcement).](architecture_diagram.svg)
+
 ## What's implemented
 
 | Diagram box | File | Function(s) |

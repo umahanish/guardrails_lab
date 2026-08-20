@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1260 920" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1260" height="920" fill="#ffffff"/>
+
+  <!-- ================= Input Guardrails ================= -->
+  <rect x="665" y="10" width="255" height="345" rx="8" fill="#f87171" stroke="#1f2937" stroke-width="2"/>
+  <text x="792" y="34" text-anchor="middle" font-size="17" font-weight="bold" fill="#111827">Input Guardrails</text>
+
+  <rect x="690" y="50"  width="205" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="81" text-anchor="middle" font-size="14" fill="#111827">Mask Sensitive Data</text>
+
+  <rect x="690" y="118" width="205" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="149" text-anchor="middle" font-size="14" fill="#111827">Detect Prompt Injection</text>
+
+  <rect x="690" y="186" width="205" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="217" text-anchor="middle" font-size="14" fill="#111827">Scope Validation</text>
+
+  <rect x="690" y="254" width="205" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="285" text-anchor="middle" font-size="14" fill="#111827">Content Safety</text>
+
+  <!-- ================= Agent ================= -->
+  <rect x="255" y="380" width="160" height="110" rx="8" fill="#7fd8cc" stroke="#1f2937" stroke-width="2"/>
+  <text x="335" y="441" text-anchor="middle" font-size="16" fill="#111827">Agent</text>
+
+  <!-- ================= LLM ================= -->
+  <rect x="980" y="380" width="160" height="110" rx="8" fill="#fde68a" stroke="#1f2937" stroke-width="2"/>
+  <text x="1060" y="441" text-anchor="middle" font-size="16" fill="#111827">LLM</text>
+
+  <!-- ================= Output Guardrails ================= -->
+  <rect x="665" y="515" width="255" height="310" rx="8" fill="#f87171" stroke="#1f2937" stroke-width="2"/>
+  <text x="792" y="539" text-anchor="middle" font-size="17" font-weight="bold" fill="#111827">Output Guardrails</text>
+
+  <rect x="690" y="558" width="205" height="62" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="583" text-anchor="middle" font-size="14" fill="#111827">Groundedness /</text>
+  <text x="792" y="601" text-anchor="middle" font-size="14" fill="#111827">Hallucination check</text>
+
+  <rect x="690" y="634" width="205" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="665" text-anchor="middle" font-size="14" fill="#111827">Mask Sensitive Data</text>
+
+  <rect x="690" y="700" width="205" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="792" y="731" text-anchor="middle" font-size="14" fill="#111827">Content Safety</text>
+
+  <!-- ================= Tool Guardrails ================= -->
+  <rect x="95" y="558" width="455" height="140" rx="8" fill="#f87171" stroke="#1f2937" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="322" y="582" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Tool Guardrails</text>
+
+  <rect x="115" y="598" width="210" height="80" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="220" y="633" text-anchor="middle" font-size="14" fill="#111827">Schema/ Parameter</text>
+  <text x="220" y="651" text-anchor="middle" font-size="14" fill="#111827">validation</text>
+
+  <rect x="345" y="598" width="185" height="80" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="437" y="642" text-anchor="middle" font-size="14" fill="#111827">Permission enforcement</text>
+
+  <!-- ================= Tools ================= -->
+  <rect x="115" y="738" width="395" height="155" rx="8" fill="#bfdbfe" stroke="#1f2937" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="150" y="763" font-size="16" fill="#111827">Tools</text>
+
+  <rect x="195" y="778" width="100" height="42" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="245" y="804" text-anchor="middle" font-size="14" fill="#111827">Read</text>
+
+  <rect x="330" y="778" width="100" height="42" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="380" y="804" text-anchor="middle" font-size="14" fill="#111827">Write</text>
+
+  <rect x="195" y="838" width="100" height="42" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="245" y="864" text-anchor="middle" font-size="14" fill="#111827">Update</text>
+
+  <rect x="330" y="838" width="100" height="42" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="380" y="864" text-anchor="middle" font-size="14" fill="#111827">Delete</text>
+
+  <!-- ================= Arrows ================= -->
+  <!-- Agent -> Input Guardrails -->
+  <path d="M 415 405 L 792 405 L 792 360" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Input Guardrails -> LLM -->
+  <path d="M 920 183 L 1060 183 L 1060 375" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -> Output Guardrails -->
+  <path d="M 1060 490 L 1060 675 L 925 675" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Output Guardrails -> Agent -->
+  <path d="M 792 515 L 792 465 L 420 465" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Agent -> Tool Guardrails -->
+  <path d="M 322 490 L 322 553" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Tool Guardrails -> Tools -->
+  <path d="M 322 698 L 322 733" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>
