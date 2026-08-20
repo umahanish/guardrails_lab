@@ -1,0 +1,24 @@
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+jsonschema>=4.20.0
+
+# Optional: only needed for guardrails/input_guardrails_presidio.py
+# and guardrails/pii_tokenization.py (NER-based PII masking / encryption)
+presidio-analyzer
+presidio-anonymizer
+# Also run: python -m spacy download en_core_web_lg
+
+# Optional: only needed for guardrails/input_guardrails_deberta.py
+# (local prompt-injection classifier, as an alternative to the
+# Claude-as-judge version)
+transformers
+torch
+
+# Optional: only needed for guardrails/input_guardrails_detoxify.py
+# (local content-moderation classifier, as an alternative to the
+# Claude-as-judge content_safety() version)
+detoxify
+
+# Optional: only needed for guardrails/input_guardrails_groq.py
+# (fast/cheap scope-validation alternative via Groq's hosted inference)
+groq
